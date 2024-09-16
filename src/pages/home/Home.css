@@ -1,0 +1,63 @@
+@import '../../App.css';
+.main-container{
+    display: flex;
+    flex-direction: row;
+    background: url("src/assets/bg_image_hero_blured.jpg");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 70vh;
+}
+.main-container div{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 4%;
+    
+}
+.content2 {
+    align-items: center;
+    justify-content: center;
+}
+.tittle{
+    margin: 0 0 0 0;
+    color: var(--text-color);
+    font-size: var(--font-size-tittle);
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+.paragraph{
+    color: var(--text-color);
+    font-size: var(--font-size-paragraph);
+    text-align: center;
+}
+.image-vision {
+    width: 50%;
+    position: relative;
+}
+
+.image-vision img {
+    position: absolute;
+    border-radius: 10px;
+}
+
+.principal-img img {
+    max-width: 200px;
+    z-index: 100;
+    left: 0%;
+}
+
+.secundary-img img {
+    max-width: 300px;
+    left: -30%;
+    top: 0%;    
+}
+
+.terniary-img img {
+    max-width: 400px;
+    left: 30%;
+    bottom: 0%;
+}
