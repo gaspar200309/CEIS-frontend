@@ -61,7 +61,7 @@
 }
 
 .footer-section ul li a:hover {
-  color: #f4b400; 
+  text-decoration: underline;
 }
 
 .social-icons i {
@@ -82,6 +82,12 @@
   transition: color 0.3s; 
 }
 
-.social-icons svg:hover {
-  color: #f4b400; 
+.social-icons .faTwitter:hover {
+  color: #00acee; 
+}
+.faFacebook:hover {
+  color: #3b5998; 
+}
+.faTiktok:hover {
+  color: #e4405f; 
 }

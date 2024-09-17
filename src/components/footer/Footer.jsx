@@ -10,9 +10,9 @@ const Footer = () => {
           <h1 className="footer-logo">CEIS</h1>
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error quam consectetur quod commodi? Quae, ex.</p>
           <div className="social-icons">
-            <FaTwitter />
-            <FaFacebook />
-            <FaTiktok />
+            <FaTwitter className='faTwitter'/>
+            <FaFacebook className='faFacebook'/>
+            <FaTiktok className='faTiktok'/>
           </div>
         </div>
         <div className="footer-section links">
