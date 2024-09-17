@@ -9,6 +9,7 @@ import imgComunicado from '../../assets/image-card-comunications.jpg'
 import imgCourses from '../../assets/image-card-courses.jpg'
 import imgMaterial from '../../assets/image-card-material.jpg'
 
+
 function Home() {
   return (
     <section>
@@ -47,6 +48,19 @@ function Home() {
                 <Card className="custom-card" image={imgComunicado} title="Comunicados" description="¡Atención! Consulta los últimos comunicados del Centro de Estudiantes de Ingeniería de Sistemas para estar al día con eventos y noticias importantes."  />
                 <Card className="custom-card" image={imgCourses} title="Cursos" description="¡Atención! Consulta los últimos comunicados del Centro de Estudiantes de Ingeniería de Sistemas para estar al día con eventos y noticias importantes."  />
                 <Card className="custom-card" image={imgMaterial} title="Recursos" description="¡Atención! Consulta los últimos comunicados del Centro de Estudiantes de Ingeniería de Sistemas para estar al día con eventos y noticias importantes."  />
+            </div>
+        </main>
+
+        <main className='main-our-career-container'>
+            <div className='left-side'>
+                <p className='tittle'>Nuestra Carrera</p>
+                <p className='paragraph'>
+                    we made it so breautiful and simple. It combines landings, pages, blogs and shop screens. It is defenitly the tool you need in your collection!
+                </p>
+                <button>Ver más</button>
+            </div>
+            <div className='rigth-side'>
+                
             </div>
         </main>
 
