@@ -9,6 +9,8 @@ import imgComunicado from '../../assets/image-card-comunications.jpg'
 import imgCourses from '../../assets/image-card-courses.jpg'
 import imgMaterial from '../../assets/image-card-material.jpg'
 import Footer from '../../components/footer/Footer'
+import Paragraph from '../../components/paragraph/Paragraph';
+
 
 function Home() {
   return (
@@ -65,7 +67,43 @@ function Home() {
         </main>
         
         <main className='faq-main-section'>
-            
+            <h1>Preguntas Frecuentes</h1>
+                <div className='div-cont-faq-questions'>
+                    <div>
+                        <Paragraph 
+                            subtitle="How Startup Framework works?" 
+                            pContent="The Generator App is an online tool that helps you to export ready-made templates ready to work as your future website. It helps you to combine slides, panels and other components and export it as a set of static files: HTML/CSS/JS." 
+                            className="faq-left" />
+
+                        <Paragraph 
+                            subtitle="What exactly am I buying?" 
+                            pContent="You’re buying an access to the Startup Generator app to export ready-made templates with the rest source files included. It’s an online tool, not a software. For more details about generator’s workflow watch this tutorial." 
+                            className="faq-left" />
+
+                        <Paragraph 
+                            subtitle="How Startup Framework works?" 
+                            pContent="The Generator App is an online tool that helps you to export ready-made templates ready to work as your future website. It helps you to combine slides, panels and other components and export it as a set of static files: HTML/CSS/JS." 
+                            className="faq-left" />
+
+                    </div>
+                    <div>
+                    <Paragraph 
+                            subtitle="How Startup Framework works?" 
+                            pContent="The Generator App is an online tool that helps you to export ready-made templates ready to work as your future website. It helps you to combine slides, panels and other components and export it as a set of static files: HTML/CSS/JS." 
+                            className="faq-rigth" />
+
+                        <Paragraph 
+                            subtitle="What exactly am I buying?" 
+                            pContent="You’re buying an access to the Startup Generator app to export ready-made templates with the rest source files included. It’s an online tool, not a software. For more details about generator’s workflow watch this tutorial." 
+                            className="faq-rigth" />
+
+                        <Paragraph 
+                            subtitle="How Startup Framework works?" 
+                            pContent="The Generator App is an online tool that helps you to export ready-made templates ready to work as your future website. It helps you to combine slides, panels and other components and export it as a set of static files: HTML/CSS/JS." 
+                            className="faq-rigth" />
+                        
+                    </div>
+            </div>            
         </main>
 
 

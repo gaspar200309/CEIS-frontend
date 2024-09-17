@@ -110,10 +110,10 @@ h2 {
     color: black;
 }
 .rigth-side{
-    background: url("src/assets/bg_nuestra_carrera.jpg");
-    background-size: 100%;
+    background-image: url("src/assets/bg_nuestra_carrera.jpg");
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: cover;
 }
 
 .left-side .paragraph{
@@ -121,5 +121,40 @@ h2 {
 }
 
 .faq-main-section{
-    height: 100vh;
+    height: 600px;
+}
+
+.faq-main-section h1{
+    text-align: center;
+    margin-top: 0;
+    padding-top: 5%;
+    font-size: var(--font-size-subtittle);
+    color: var();
+}
+.div-cont-faq-questions{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 700px;
+}
+
+.faq-rigth{
+    padding-right: 40%;
+    text-align: start;
+    padding-left: 10px;
+}
+.faq-rigth p{
+    text-align: start;
+}
+
+/* padding-left: 200px;
+text-align: end;
+text-align: end; */
+
+.faq-left{
+    text-align: start;
+    padding-right: 10px;
+    padding-left: 40%;
+}
+.faq-left p{
+    text-align: start;
 }
