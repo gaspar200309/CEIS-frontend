@@ -15,7 +15,6 @@
     justify-content: center;
     align-items: center;
     padding-inline: 4%;
-    
 }
 .content2 {
     align-items: center;
@@ -28,6 +27,7 @@
     text-align: center;
     font-weight: bold;
     margin-bottom: 40px;
+    line-height: 5rem;
 }
 .paragraph{
     color: var(--text-color);
@@ -61,3 +61,24 @@
     left: 30%;
     bottom: 0%;
 }
+
+h2 {
+    margin: 0;
+}
+.main-redirect-container {
+    background-color: var(--primary-color);
+    margin: 0;
+    padding-top: 2%;
+    padding-bottom: 3%;
+}
+.card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    height: 500px;
+}
+
+
+
+

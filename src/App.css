@@ -9,9 +9,11 @@
   --font-size-tittle:3rem;
   --font-size-subtittle:2rem;
   --font-size-paragraph:1.375rem;
+  --card-bg-color-purple:#422349;
 }
 
 body {
   margin: 0;
   font-family: var(--font-family);
 }
+
