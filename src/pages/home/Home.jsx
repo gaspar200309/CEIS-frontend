@@ -63,6 +63,11 @@ function Home() {
                 
             </div>
         </main>
+        
+        <main className='faq-main-section'>
+            
+        </main>
+
 
         <Footer/>
 

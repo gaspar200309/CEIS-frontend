@@ -119,3 +119,7 @@ h2 {
 .left-side .paragraph{
     padding-inline: 10%;
 }
+
+.faq-main-section{
+    height: 100vh;
+}
