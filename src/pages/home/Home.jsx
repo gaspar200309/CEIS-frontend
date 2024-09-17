@@ -8,7 +8,7 @@ import Card from '../../components/cards/Card'
 import imgComunicado from '../../assets/image-card-comunications.jpg'
 import imgCourses from '../../assets/image-card-courses.jpg'
 import imgMaterial from '../../assets/image-card-material.jpg'
-
+import Footer from '../../components/footer/Footer'
 
 function Home() {
   return (
@@ -64,7 +64,7 @@ function Home() {
             </div>
         </main>
 
-
+        <Footer/>
 
     </section>
 );
