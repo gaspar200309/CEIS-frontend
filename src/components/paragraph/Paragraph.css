@@ -1,0 +1,19 @@
+@import '../../App.css';
+.paragraph-container {
+  display: flex;
+  flex-direction: column;
+}
+.paragraph-subtitle {
+    color: var(--text-color-secondary);
+    font-size: 1.1rem;
+}
+.paragraph-container p{
+    color: rgb(20, 20, 57, 0.4);
+    font-size: 1rem;
+}
+h4{
+    margin: 0;
+}
+/* padding-left: 200px;
+text-align: end;
+text-align: end; */

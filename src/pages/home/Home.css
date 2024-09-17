@@ -15,7 +15,6 @@
     justify-content: center;
     align-items: center;
     padding-inline: 4%;
-    
 }
 .content2 {
     align-items: center;
@@ -28,6 +27,7 @@
     text-align: center;
     font-weight: bold;
     margin-bottom: 40px;
+    line-height: 5rem;
 }
 .paragraph{
     color: var(--text-color);
@@ -60,4 +60,101 @@
     max-width: 400px;
     left: 30%;
     bottom: 0%;
+}
+
+h2 {
+    margin: 0;
+}
+.main-redirect-container {
+    background-color: var(--primary-color);
+    margin: 0;
+    padding-top: 2%;
+    padding-bottom: 3%;
+}
+.card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    height: 500px;
+}
+
+.main-our-career-container{
+    display: grid;
+    grid-template-columns: 1fr 1.8fr;
+    height: 700px;
+}
+
+.left-side{
+    background-color: #000000;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;  
+}
+.left-side button{
+    padding: 10px 20px;
+    border: 2px solid rgba(192, 190, 190, 0.3);
+    background: transparent;
+    color: var(--text-color);
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 40px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 25px;
+}
+
+.left-side button:hover{
+    background-color: white;
+    color: black;
+}
+.rigth-side{
+    background-image: url("src/assets/bg_nuestra_carrera.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: cover;
+}
+
+.left-side .paragraph{
+    padding-inline: 10%;
+}
+
+.faq-main-section{
+    height: 600px;
+}
+
+.faq-main-section h1{
+    text-align: center;
+    margin-top: 0;
+    padding-top: 5%;
+    font-size: var(--font-size-subtittle);
+    color: var();
+}
+.div-cont-faq-questions{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 700px;
+}
+
+.faq-rigth{
+    padding-right: 40%;
+    text-align: start;
+    padding-left: 10px;
+}
+.faq-rigth p{
+    text-align: start;
+}
+
+/* padding-left: 200px;
+text-align: end;
+text-align: end; */
+
+.faq-left{
+    text-align: start;
+    padding-right: 10px;
+    padding-left: 40%;
+}
+.faq-left p{
+    text-align: start;
 }

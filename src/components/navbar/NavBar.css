@@ -1,6 +1,11 @@
 @import '../../App.css';
 
 .navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10004;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -8,6 +13,12 @@
     background-color: var(--primary-color);
     color: var(--text-color);
     padding-inline: 100px;
+    border-bottom-style: solid;
+    border-bottom-color: black;
+    border-bottom-width: 1px;
+  }
+  body {
+    padding-top: 96px;
   }
   
   .navbar-logo {
