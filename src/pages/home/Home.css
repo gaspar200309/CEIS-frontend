@@ -115,3 +115,7 @@ h2 {
     background-repeat: no-repeat;
     background-position: center;
 }
+
+.left-side .paragraph{
+    padding-inline: 10%;
+}
