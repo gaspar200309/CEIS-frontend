@@ -5,7 +5,10 @@ import imgPrimary from '../../assets/img-primary.jpg'
 import imgSecondary from '../../assets/img-secondary.jpg'
 import imgTerniary from '../../assets/img-terniary.jpg'
 import Card from '../../components/cards/Card'
-import imgComunicado from '../../assets/image-card-comunicate.jpg'
+import imgComunicado from '../../assets/image-card-comunications.jpg'
+import imgCourses from '../../assets/image-card-courses.jpg'
+import imgMaterial from '../../assets/image-card-material.jpg'
+
 function Home() {
   return (
     <section>
@@ -42,8 +45,8 @@ function Home() {
             <p className='tittle'>Title</p>
             <div className='card-container'>
                 <Card className="custom-card" image={imgComunicado} title="Comunicados" description="¡Atención! Consulta los últimos comunicados del Centro de Estudiantes de Ingeniería de Sistemas para estar al día con eventos y noticias importantes."  />
-                <Card className="custom-card" image={imgPrimary} title="Cursos" description="¡Atención! Consulta los últimos comunicados del Centro de Estudiantes de Ingeniería de Sistemas para estar al día con eventos y noticias importantes."  />
-                <Card className="custom-card" image={imgPrimary} title="Recursos" description="¡Atención! Consulta los últimos comunicados del Centro de Estudiantes de Ingeniería de Sistemas para estar al día con eventos y noticias importantes."  />
+                <Card className="custom-card" image={imgCourses} title="Cursos" description="¡Atención! Consulta los últimos comunicados del Centro de Estudiantes de Ingeniería de Sistemas para estar al día con eventos y noticias importantes."  />
+                <Card className="custom-card" image={imgMaterial} title="Recursos" description="¡Atención! Consulta los últimos comunicados del Centro de Estudiantes de Ingeniería de Sistemas para estar al día con eventos y noticias importantes."  />
             </div>
         </main>
 
