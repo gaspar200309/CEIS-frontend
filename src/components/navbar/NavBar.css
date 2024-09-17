@@ -1,0 +1,84 @@
+@import '../../App.css';
+
+.navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10004;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding-inline: 100px;
+    border-bottom-style: solid;
+    border-bottom-color: black;
+    border-bottom-width: 1px;
+  }
+  body {
+    padding-top: 96px;
+  }
+  
+  .navbar-logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar-logo:hover {
+    cursor: pointer;
+  }
+  
+  .navbar-logo img {
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  .navbar-logo h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  .navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navbar-links li {
+    margin: 0 10px;
+  }
+  
+  .navbar-links a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-links a:hover {
+    text-decoration: underline;
+  }
+  
+  .navbar-buttons {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .btn-login, .btn-register {
+    padding: 10px 20px;
+    border: 2px solid rgba(192, 190, 190, 0.3);
+    background: transparent;
+    color: var(--text-color);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 25px;
+  }
+  
+  .btn-login:hover, .btn-register:hover {
+    background-color: white;
+    color: #003E49;
+  }
