@@ -15,7 +15,7 @@ import Paragraph from '../../components/paragraph/Paragraph';
 function Home() {
   return (
     <section>
-        <NavBar/>
+        {/* <NavBar/> */}
         <main >
             <div className='main-container'>
                 <div className='content'>

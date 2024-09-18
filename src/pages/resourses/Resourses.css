@@ -1,0 +1,99 @@
+/* main h1{
+    text-align: center;
+    margin-top: 0;
+    padding-top: 3%;
+    font-size: var(--font-size-subtittle);
+    color: var(--text-color-secondary);
+    text-decoration: underline;
+}
+
+
+.semestre-menu {
+    display: flex;
+    margin-top: 60px;
+    justify-content: space-between;
+    padding-inline: 300px;
+
+}
+  
+.semestre-btn {
+    background-color: #00485b;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+  
+.semestre-btn:hover {
+    background-color: #4a4b4b;
+    
+}
+   */
+
+main h1 {
+    text-align: center;
+    margin-top: 0;
+    padding-top: 3%;
+    font-size: var(--font-size-subtittle);
+    color: var(--text-color-secondary);
+    text-decoration: underline;
+}
+
+.semestre-menu {
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 300px;
+    margin-top: 60px;
+}
+
+.semestre-container {
+    position: relative; /* Necesario para que el selector de materias se posicione correctamente */
+}
+
+.semestre-btn {
+    background-color: #00485b;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.semestre-btn:hover {
+    background-color: #4a4b4b;
+}
+
+.subject-selector-container {
+    position: absolute;
+    top: 110%; /* Aparecerá justo debajo del botón */
+    left: 0;
+    width: 200px; /* Ajusta según el tamaño necesario */
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 0px;
+    z-index: 10;
+}
+
+.subject-selector-container {
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 10px;
+  z-index: 10;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: -5px;
+}
+
+.subject-selector-container:hover {
+    display: block;
+}
