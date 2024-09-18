@@ -1,5 +1,5 @@
-import ImgPrimay from './img-primary.jpg'
+import ImgPrimay from './LogoCeis.jpg'
 
 export default {
-    "ImgPrimay" : ImgPrimay
+    "ImgPrimary" : ImgPrimay
 }
