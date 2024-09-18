@@ -1,21 +1,18 @@
 import React from 'react'
 import './Home.css'
-import NavBar from '../../components/navbar/NavBar'
-import imgPrimary from '../../assets/img-primary.jpg'
+import imgPrimary from '../../assets/LogoCeis.jpg'
 import imgSecondary from '../../assets/img-secondary.jpg'
 import imgTerniary from '../../assets/img-terniary.jpg'
 import Card from '../../components/cards/Card'
 import imgComunicado from '../../assets/image-card-comunications.jpg'
 import imgCourses from '../../assets/image-card-courses.jpg'
 import imgMaterial from '../../assets/image-card-material.jpg'
-import Footer from '../../components/footer/Footer'
 import Paragraph from '../../components/paragraph/Paragraph';
 
 
 function Home() {
   return (
     <section>
-        {/* <NavBar/> */}
         <main >
             <div className='main-container'>
                 <div className='content'>
@@ -106,8 +103,6 @@ function Home() {
             </div>            
         </main>
 
-
-        <Footer/>
 
     </section>
 );
