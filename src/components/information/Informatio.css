@@ -1,0 +1,45 @@
+ 
+  .container-information {
+    text-align: center;
+    background: var(--primary-color);
+    padding: 20px 50px 150px 20px;
+  }
+  
+  .container-information  h1 {
+    color: var(--text-color);
+    padding-bottom: 50px;
+    font-family: var(--font-family);
+  }
+  
+  .container-information .content {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 20px;
+  }
+  
+  .container-information .cardI {
+    background-color: none;
+    border-radius: 10px;
+    border: 1px solid #ffff;
+    padding: 50px;
+    width: 250px;
+    text-align: center;
+    font-family: var(--font-family);
+  }
+  
+  .container-information .cardI h4 {
+    color: var(--text-color);
+    margin: 15px 0;
+  }
+  
+  .container-information .cardI p {
+    color: var(--text-color);
+    font-size: 14px;
+  }
+  
+  .container-information .cardI .icon {
+    color: var(--text-color);
+    font-size: 2rem;
+  }
+  

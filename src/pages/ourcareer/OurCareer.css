@@ -1,0 +1,216 @@
+/* Main container styling */
+.main-container-ourcareer {
+    display: flex;
+    flex-direction: row;
+    background: url("../../assets/img/image.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 70vh;
+}
+
+.main-container-ourcareer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+}
+
+.main-container-ourcareer > * {
+    position: relative;
+    z-index: 2;
+}
+.main-container-ourcareer div {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 4%;
+}
+
+
+.tittle {
+    margin: 0;
+    color: var(--text-color);
+    font-size: var(--font-size-tittle);
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 40px;
+    line-height: 5rem;
+}
+
+.paragraph {
+    color: var(--text-color);
+    font-size: var(--font-size-paragraph);
+    text-align: center;
+}
+.PerfilDelIngSistemas {
+    width: 1440px;
+    height: 921px;
+    position: relative;
+    background: white;
+  }
+  
+  .Image {
+    width: 432px;
+    height: 457px;
+    left: 1008px;
+    top: 253px;
+    position: absolute;
+    background: linear-gradient(0deg, #E3E3E3 0%, #E3E3E3 100%);
+  }
+  
+  .EasySteps {
+    width: 698.83px;
+    height: 57px;
+    left: 378px;
+    top: 25px;
+    position: absolute;
+    text-align: center;
+    color: #1E0E62;
+    font-size: 42px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    line-height: 52px;
+    word-wrap: break-word;
+  }
+  
+  .IconFill {
+    width: 50px;
+    height: 50px;
+    left: 345px;
+    top: 554px;
+    position: absolute;
+  }
+  
+  .Icon {
+    width: 16px;
+    height: 16px;
+    left: 19px;
+    top: 18px;
+    position: absolute;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-family: 'FontAwesome';
+  }
+  
+  .Steps {
+    width: 814.86px;
+    height: 689.89px;
+    left: 171.14px;
+    top: 154.70px;
+    position: relative;
+
+  }
+  
+  .Line {
+    width: 2.06px;
+    height: 566.77px;
+    left: 20.57px;
+    top: 32.56px;
+    position: absolute;
+    background: #EBEAED;
+  }
+  
+  .Step {
+    width: 800.23px;
+    height: 111.93px;
+    position: absolute;
+  }
+  
+  .Text {
+    width: 728.23px;
+    height: 101.55px;
+    position: relative;
+
+  }
+  
+  .StepNumber {
+    width: 41.14px;
+    height: 40.70px;
+    position: relative;
+
+  }
+  
+  .Circle {
+    width: 41.14px;
+    height: 40.70px;
+    background: #EBEAED;
+  }
+  
+  .YouCanDecideWheth, .TheMostImportantP, .TheGeneratorAppIs {
+    color: rgba(21.06, 20.34, 56.79, 0.40);
+    font-size: 16px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    line-height: 26px;
+    word-wrap: break-word;
+  }
+  
+  .VarietyOfDesigns, .TwentyFiveAwesome, .HowStartupFramewor {
+    color: #1E0E62;
+    font-size: 18px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    line-height: 28px;
+    word-wrap: break-word;
+  }
+  
+  .FellOurDesign, .StartupDesignFrame {
+    font-size: 14px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 26px;
+    letter-spacing: 2px;
+  }
+  
+  .ThisisengineeringZbltu0zbjcuUnsplash1 {
+    width: 197px;
+    height: 121px;
+    border-radius: 11px;
+    position: relative;
+
+  }
+  
+  .StepNumber div {
+    width: 11.31px;
+    position: absolute;
+    text-align: center;
+    color: rgba(21.06, 20.34, 56.79, 0.40);
+    font-size: 18px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    line-height: 26px;
+  }
+  
+
+  /*  MALLA CURRICULAR*/
+  
+  .malla-curricular {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    font-family: var(--font-family);
+  }
+  
+  .malla-curricular h1 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+  }
+  
+  .malla-curricular img {
+    max-width: 100%;
+    width: 800px;
+    height: auto;
+    border-radius: 10px;
+  }
+  
