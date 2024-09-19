@@ -20,4 +20,5 @@ export default {
     "Comunicados2" : comunicados2,
     "Comunicados3" : comunicados3,
     "Comunicados4" : comunicados4,
+
 }
