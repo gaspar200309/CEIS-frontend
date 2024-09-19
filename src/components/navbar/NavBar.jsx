@@ -26,8 +26,8 @@ function NavBar() {
       <ul className={`navbar-links ${menuOpen ? "open" : ""}`}>
         <li><Link to="/">Inicio</Link></li>
         <li><Link to="/nuestra-carrera">Nuestra carrera</Link></li>
-        <li><Link to="/recursos">Recursos</Link></li>
         <li><Link to="/comunicados">Comunicados</Link></li>
+        <li><Link to="/recursos">Recursos</Link></li>
         <li><Link to="/cursos">Cursos</Link></li>
         <li><Link to="/faq">F.A.Q.</Link></li>
       </ul>
