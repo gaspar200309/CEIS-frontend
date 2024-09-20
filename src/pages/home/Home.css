@@ -138,20 +138,28 @@
 }
 
 /* FAQ section */
-.faq-main-section {
-    height: 600px;
-}
+
 .faq-main-section h1 {
     text-align: center;
     margin-top: 0;
     padding-top: 5%;
     font-size: var(--font-size-subtittle);
+    margin-bottom: 4%;
 }
 .div-cont-faq-questions {
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 700px;
+    margin-inline: 20%;
+    text-align: start;
+    gap: 40px;
 }
+.div-cont-faq-questions p{
+    text-align: start;
+    line-height: 2rem;
+}
+
+
 
 /* Responsive Design Adjustments */
 
