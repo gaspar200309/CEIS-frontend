@@ -1,0 +1,101 @@
+
+  
+  .comunicados {
+    font-family: var(--font-family);
+    text-align: center;
+    padding: 20px 50px 150px 20px;
+  }
+  
+  .comunicados h1 {
+    color: var(--primary-color);
+    margin: 40px;
+  }
+  
+  .comunicados-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-left: 10%;
+  }
+  
+  .comunicado-card {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 100%;
+    width: 500px;
+  }
+  
+  .comunicado-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  .comunicado-card .description{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .comunicado-card h2 {
+    color: var(--primary-color);
+    margin: 10px 0;
+  }
+  
+  .comunicado-card p {
+    color: var(--secondary-color);
+    margin: 10px 0;
+  }
+  
+  .comunicado-card small {
+    display: block;
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+  }
+  
+  .actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .actions button {
+    font-size: 20px;
+    border: none;
+    background: none;
+    color: #5e5959dd;
+    cursor: pointer;
+  }
+  
+  .actions button:hover {
+    color: #140a46;
+  }
+  
+  .actions button svg {
+    font-size: 24px;
+  }
+  
+  /* Styles for enlarged image */
+  .enlarged-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    cursor: pointer;
+  }
+  
+  .enlarged-image {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 8px;
+  }
+  

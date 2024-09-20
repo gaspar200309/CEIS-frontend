@@ -1,7 +1,7 @@
 @import '../../App.css';
 
 .footer {
-  background: url("Z:/CEIS-Front/CEIS-frontend/src/assets/bg-footer2.jpg");
+  background: url("../../assets/bg-footer2.jpg");
   background-size: cover;
   background-position: top;
   background-attachment: fixed;
