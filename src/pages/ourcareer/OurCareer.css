@@ -9,6 +9,12 @@
     height: 70vh;
 }
 
+.div {
+
+    position: absolute;
+    
+}
+
 .main-container-ourcareer::before {
     content: "";
     position: absolute;
