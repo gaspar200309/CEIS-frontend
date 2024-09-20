@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import './Resourses.css';
 import SubjectSelector from '../../components/subjectSelector/SubjectSelector';
+import Card from '../../components/cards/Card';
+import ImagesApp from '../../assets/ImagesApp';
 
 const Resourses = () => {
   const [selectedSemestre, setSelectedSemestre] = useState(null);
@@ -29,8 +31,8 @@ const Resourses = () => {
   };
 
   return (
-    <main>
-      <h1>Recursos</h1>
+    <main className='.main'>
+      <h1 className='mat-acad'>Material Académico</h1>
       <div className="semestre-menu">
         {[1, 2, 3, 4, 5, 6, 7, 8, 9, 'Electivas'].map((semestre) => (
           <div
@@ -50,6 +52,19 @@ const Resourses = () => {
           </div>
         ))}
       </div>
+
+      <section className='section'>
+        <h3>
+          Cálculo 1 
+        </h3>
+        <div className='underline'></div>
+        <div className='card-container-res'>
+          <Card className="custom-card-resourses" image={ImagesApp.Comunicados1} title="Exámenes pasados" description="¡Atención! Consulta los últimos comunicados del Centro de Estudiantes de Ingeniería de Sistemas para estar al día con eventos y noticias importantes."  />
+          <Card className="custom-card-resourses" image={ImagesApp.Comunicados2} title="Libros" description="¡Atención! Consulta los últimos comunicados del Centro de Estudiantes de Ingeniería de Sistemas para estar al día con eventos y noticias importantes."  />
+          <Card className="custom-card-resourses" image={ImagesApp.Comunicados2} title="Practicas" description="¡Atención! Consulta los últimos comunicados del Centro de Estudiantes de Ingeniería de Sistemas para estar al día con eventos y noticias importantes."  />
+        </div>
+      </section>
+
     </main>
   );
 };
