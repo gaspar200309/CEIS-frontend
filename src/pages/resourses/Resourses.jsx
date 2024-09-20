@@ -4,7 +4,7 @@ import SubjectSelector from '../../components/subjectSelector/SubjectSelector';
 
 const Resourses = () => {
   const [selectedSemestre, setSelectedSemestre] = useState(null);
-  const [showSubjects, setShowSubjects] = useState(false); // Para controlar la visibilidad del selector
+  const [showSubjects, setShowSubjects] = useState(false); 
 
   const materiasPorSemestre = {
     1: ['Álgebra 1', 'Cálculo 1', 'Met. Investigación', 'Física General', 'Introd. a la programación', 'Inglés 1'],
