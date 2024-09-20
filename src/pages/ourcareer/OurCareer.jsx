@@ -99,7 +99,6 @@ export default function OurCareer() {
                     <h1>Malla curricular</h1>
                     <img src={ImagesApp.Malla} alt="Malla Curricular" />
                 </div>
-
             </div>
         </>
     )

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from "react-router-dom";
-import logo from "../../assets/ic-islogo.png";
+import ImagesApp from '../../assets/ImagesApp';
+import useIcons from '../../hooks/useIcons';
 import "./NavBar.css";
 
 function NavBar() {
@@ -13,7 +14,7 @@ function NavBar() {
   return (
     <nav className="navbar">
       <div className="navbar-logo">
-        <img src={logo} alt="Logo" />
+        <img src={ImagesApp.Logo} alt="Logo" />
         <h1>CEIS</h1>
       </div>
 

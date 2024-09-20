@@ -1,12 +1,7 @@
 import React from 'react'
 import './Home.css'
-import imgPrimary from '../../assets/LogoCeis.jpg'
-import imgSecondary from '../../assets/img-secondary.jpg'
-import imgTerniary from '../../assets/img-terniary.jpg'
-import Card from '../../components/cards/Card'
-import imgComunicado from '../../assets/image-card-comunications.jpg'
-import imgCourses from '../../assets/image-card-courses.jpg'
-import imgMaterial from '../../assets/image-card-material.jpg'
+import ImagesApp from '../../assets/ImagesApp'
+import Card from '../../components/cards/Card';
 import Paragraph from '../../components/paragraph/Paragraph';
 
 
@@ -25,15 +20,15 @@ function Home() {
                     
                     <div className='image-vision'>
                         <div className="principal-img">
-                            <img src={imgPrimary} alt="" />
+                            <img src={ImagesApp.ImgPrimary} alt="" />
                         </div>
 
                         <div className="secundary-img">
-                            <img src={imgSecondary} alt="" />
+                            <img src={ImagesApp.imgSecondary} alt="" />
                         </div>
 
                         <div className="terniary-img">
-                            <img src={imgTerniary} alt="" />
+                            <img src={ImagesApp.imgTerniary} alt="" />
                         </div>
                     </div>
                 
@@ -44,9 +39,9 @@ function Home() {
         <main className='main-redirect-container'>
             <p className='tittle'>Title</p>
             <div className='card-container'>
-                <Card className="custom-card" image={imgComunicado} title="Comunicados" description="¡Atención! Consulta los últimos comunicados del Centro de Estudiantes de Ingeniería de Sistemas para estar al día con eventos y noticias importantes."  />
-                <Card className="custom-card" image={imgCourses} title="Cursos" description="¡Atención! Consulta los últimos comunicados del Centro de Estudiantes de Ingeniería de Sistemas para estar al día con eventos y noticias importantes."  />
-                <Card className="custom-card" image={imgMaterial} title="Recursos" description="¡Atención! Consulta los últimos comunicados del Centro de Estudiantes de Ingeniería de Sistemas para estar al día con eventos y noticias importantes."  />
+                <Card className="custom-card" image={ImagesApp.imgComunicado} title="Comunicados" description="¡Atención! Consulta los últimos comunicados del Centro de Estudiantes de Ingeniería de Sistemas para estar al día con eventos y noticias importantes."  />
+                <Card className="custom-card" image={ImagesApp.imgCourses} title="Cursos" description="¡Atención! Consulta los últimos comunicados del Centro de Estudiantes de Ingeniería de Sistemas para estar al día con eventos y noticias importantes."  />
+                <Card className="custom-card" image={ImagesApp.imgMaterial} title="Recursos" description="¡Atención! Consulta los últimos comunicados del Centro de Estudiantes de Ingeniería de Sistemas para estar al día con eventos y noticias importantes."  />
             </div>
         </main>
 
