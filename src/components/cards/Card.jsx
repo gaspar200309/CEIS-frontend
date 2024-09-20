@@ -4,7 +4,7 @@ import './Card.css';
 function Card({ className, image, title, description, onButtonClick }) {
   return (
     <div className={`card ${className}`}>
-      <div className="card-image">
+      <div className="card-image-div">
         <img src={image} alt={title} />
       </div>
       <div className="card-content">
