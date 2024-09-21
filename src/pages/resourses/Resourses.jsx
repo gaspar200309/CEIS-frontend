@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import './Resourses.css';
 import SubjectSelector from '../../components/subjectSelector/SubjectSelector';
-import Card from '../../components/cards/Card';
-import ImagesApp from '../../assets/ImagesApp';
+import FileInfoBox from '../../components/contentResourse/FileInfoBox';
+
 
 const Resourses = () => {
   const [selectedSemestre, setSelectedSemestre] = useState(null);
@@ -59,9 +59,114 @@ const Resourses = () => {
         </h3>
         <div className='underline'></div>
         <div className='card-container-res'>
-          <Card className="custom-card-resourses" image={ImagesApp.Comunicados1} title="Exámenes pasados" description="¡Atención! Consulta los últimos comunicados del Centro de Estudiantes de Ingeniería de Sistemas para estar al día con eventos y noticias importantes."  />
-          <Card className="custom-card-resourses" image={ImagesApp.Comunicados2} title="Libros" description="¡Atención! Consulta los últimos comunicados del Centro de Estudiantes de Ingeniería de Sistemas para estar al día con eventos y noticias importantes."  />
-          <Card className="custom-card-resourses" image={ImagesApp.Comunicados2} title="Practicas" description="¡Atención! Consulta los últimos comunicados del Centro de Estudiantes de Ingeniería de Sistemas para estar al día con eventos y noticias importantes."  />
+            <h1>Exámenes Pasados</h1>
+            <FileInfoBox 
+              className='file-info-box'
+              dateUploaded='23/09/2021'
+              description='Parcial 1'
+              docente='Ing. Juan Pérez'            
+              fileSize='1.2 MB'
+            />
+            <FileInfoBox 
+              className='file-info-box'
+              dateUploaded='23/09/2021'
+              description='Parcial 1'
+              docente='Ing. Juan Pérez'            
+              fileSize='1.2 MB'
+            />
+            <FileInfoBox 
+              className='file-info-box'
+              dateUploaded='23/09/2021'
+              description='Parcial 1'
+              docente='Ing. Juan Pérez'            
+              fileSize='1.2 MB'
+            />
+            <FileInfoBox 
+              className='file-info-box'
+              dateUploaded='23/09/2021'
+              description='Parcial 1'
+              docente='Ing. Juan Pérez'            
+              fileSize='1.2 MB'
+            />
+            <FileInfoBox 
+              className='file-info-box'
+              dateUploaded='23/09/2021'
+              description='Parcial 1'
+              docente='Ing. Juan Pérez'            
+              fileSize='1.2 MB'
+            />
+            <h1>Libros</h1>
+            <FileInfoBox 
+              className='file-info-box'
+              dateUploaded='23/09/2021'
+              description='Parcial 1'
+              docente='Ing. Juan Pérez'            
+              fileSize='1.2 MB'
+            />
+            <FileInfoBox 
+              className='file-info-box'
+              dateUploaded='23/09/2021'
+              description='Parcial 1'
+              docente='Ing. Juan Pérez'            
+              fileSize='1.2 MB'
+            />
+            <FileInfoBox 
+              className='file-info-box'
+              dateUploaded='23/09/2021'
+              description='Parcial 1'
+              docente='Ing. Juan Pérez'            
+              fileSize='1.2 MB'
+            />
+            <h1>Prácticas</h1>
+            <FileInfoBox 
+              className='file-info-box'
+              dateUploaded='23/09/2021'
+              description='Parcial 1'
+              docente='Ing. Juan Pérez'            
+              fileSize='1.2 MB'
+            />
+            <FileInfoBox 
+              className='file-info-box'
+              dateUploaded='23/09/2021'
+              description='Parcial 1'
+              docente='Ing. Juan Pérez'            
+              fileSize='1.2 MB'
+            />
+            <FileInfoBox 
+              className='file-info-box'
+              dateUploaded='23/09/2021'
+              description='Parcial 1'
+              docente='Ing. Juan Pérez'            
+              fileSize='1.2 MB'
+            />
+            <FileInfoBox 
+              className='file-info-box'
+              dateUploaded='23/09/2021'
+              description='Parcial 1'
+              docente='Ing. Juan Pérez'            
+              fileSize='1.2 MB'
+            />
+            <FileInfoBox 
+              className='file-info-box'
+              dateUploaded='23/09/2021'
+              description='Parcial 1'
+              docente='Ing. Juan Pérez'            
+              fileSize='1.2 MB'
+            />
+            <FileInfoBox 
+              className='file-info-box'
+              dateUploaded='23/09/2021'
+              description='Parcial 1'
+              docente='Ing. Juan Pérez'            
+              fileSize='1.2 MB'
+            />
+            <FileInfoBox 
+              className='file-info-box'
+              dateUploaded='23/09/2021'
+              description='Parcial 1'
+              docente='Ing. Juan Pérez'            
+              fileSize='1.2 MB'
+            />
         </div>
       </section>
 

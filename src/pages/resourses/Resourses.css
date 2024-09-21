@@ -77,49 +77,21 @@
     text-align: center;
     margin-bottom: 0px;
 }
-.section .underline{
+.underline{
     display: flex;
     justify-content: center;
     margin-top: 20px;
     background-color: var(--primary-color);
     height: 7px;
     margin-bottom: 20px;
-}
-.card-cont-resourses{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10%;
-    height: 800px;
+    border-radius: 3px;
 }
 .card-container-res{
-    display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 10%;
-    height: 500px;
-    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 8px;
 }
-.custom-card-resourses{
-    background-color: #E2E2E2;
-    border-radius: 20px;
-    border: 1px solid black;
-    text-align: start;
-}
-.custom-card-resourses h2{
-    color: #1E0E62;
-}
-.custom-card-resourses p{
-    color: #1E0E62;
-    opacity: 60%;
-}
-
-.custom-card-resourses .card-button{
-    border: 1px solid black;
-    border-radius: 20px;
-    color: #1E0E62;
-}
-.custom-card-resourses .card-button:hover{
-    background-color: #1E0E62;
-    color: white;
+.file-info-box{
 }
