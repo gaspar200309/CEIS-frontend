@@ -20,4 +20,17 @@
     width: 200px; 
     height: auto;
   }
+
+  /* Responsivo */
+    @media screen and (max-width: 768px) {
+        .AccreditationImages {
+        flex-direction: column;
+        gap: 50px;
+        }
+
+        .AccreditationContainer h1{
+            margin-top: 40%;
+            padding-bottom: 0;
+        }
+    }
   

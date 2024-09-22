@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import { Link } from "react-router-dom";
 import ImagesApp from '../../assets/ImagesApp';
 import useIcons from '../../hooks/useIcons';
-import "./NavBar.css";
+import './NavBar.css';
+import { FaTimes, FaBars } from 'react-icons/fa'; // Añadimos estos íconos
 
 function NavBar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -19,12 +20,10 @@ function NavBar() {
       </div>
 
       <div className="navbar-hamburger" onClick={toggleMenu}>
-        <div></div>
-        <div></div>
-        <div></div>
+        {menuOpen ? <FaTimes size={25} color="white" /> : <FaBars size={25} color="white" />}
       </div>
 
-      <ul className={`navbar-links ${menuOpen ? "open" : ""}`}>
+      <ul className={`navbar-links ${menuOpen ? 'open' : ''}`}>
         <li><Link to="/">Inicio</Link></li>
         <li><Link to="/nuestra-carrera">Nuestra carrera</Link></li>
         <li><Link to="/comunicados">Comunicados</Link></li>
@@ -38,7 +37,7 @@ function NavBar() {
         <button className="btn-register">Regístrate</button>
       </div>
 
-      <div className={`navbar-mobile ${menuOpen ? "open" : ""}`}>
+      <div className={`navbar-mobile ${menuOpen ? 'open' : ''}`}>
         <ul>
           <li><Link to="/" onClick={toggleMenu}>Inicio</Link></li>
           <li><Link to="/nuestra-carrera" onClick={toggleMenu}>Nuestra carrera</Link></li>
