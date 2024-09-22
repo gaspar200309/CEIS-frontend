@@ -3,6 +3,7 @@ import { AiOutlineDownload } from 'react-icons/ai';
 import { ImEnlarge2 } from "react-icons/im";
 import ImagesApp from '../../assets/ImagesApp';
 import "./Communications.css";
+import useOnScreenAnimation from '../../hooks/useOnScreenAnimation';
 
 export default function Communications() {
     const [enlargedImage, setEnlargedImage] = useState(null);
@@ -26,26 +27,34 @@ export default function Communications() {
         <div className='comunicados'>
             <h1>Noticias CEIS</h1>
             <div className='comunicados-grid'>
-                {[1, 2, 3, 4].map((i) => (
-                    <div className='comunicado-card' key={i}>
-                        <img src={ImagesApp[`Comunicados${i}`]} alt={`Comunicado ${i}`} />
+                {[1, 2, 3, 4].map((i) => {
+                    const [ref, isVisible] = useOnScreenAnimation(0.1);
 
-                        <div className='description'>
-                            <div>
-                                <h2>Comunicado {i}</h2>
-                                <small>'13 de septiembre 2024'</small>
-                            </div>
-                            <div className='actions'>
-                                <button onClick={() => enlargeImage(ImagesApp[`Comunicados${i}`])}>
-                                    <ImEnlarge2 />
-                                </button>
-                                <button onClick={() => downloadImage(ImagesApp[`Comunicados${i}`], `Comunicado_${i}`)}>
-                                    <AiOutlineDownload />
-                                </button>
+                    return (
+                        <div
+                            ref={ref}
+                            className={`comunicado-card ${isVisible ? 'show' : ''}`} 
+                            key={i}
+                        >
+                            <img src={ImagesApp[`Comunicados${i}`]} alt={`Comunicado ${i}`} />
+
+                            <div className='description'>
+                                <div>
+                                    <h2>Comunicado {i}</h2>
+                                    <small>'13 de septiembre 2024'</small>
+                                </div>
+                                <div className='actions'>
+                                    <button onClick={() => enlargeImage(ImagesApp[`Comunicados${i}`])}>
+                                        <ImEnlarge2 />
+                                    </button>
+                                    <button onClick={() => downloadImage(ImagesApp[`Comunicados${i}`], `Comunicado_${i}`)}>
+                                        <AiOutlineDownload />
+                                    </button>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                ))}
+                    );
+                })}
             </div>
 
             {enlargedImage && (

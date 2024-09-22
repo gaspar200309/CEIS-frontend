@@ -1,4 +1,19 @@
-/* Estilos generales */
+@keyframes show {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+        scale: 0.9;
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        scale: 1;
+    }
+}
+
+.fade-in {
+    animation: show 0.8s ease-out forwards; /* Añade la animación */
+}
 .container-professional {
     display: flex;
     flex-direction: column;
@@ -155,30 +170,3 @@
       max-width: 60%;
     }
   }
-
-@keyframes show {
-    from {
-      opacity: 0;
-      transform: translateY(-100px);
-      scale: 25%;
-    }
-    to {
-      opacity: 1;
-        transform: translateY(0);
-        scale: 100%;
-    }
-  }
-  
-  .fade-in {
-    animation: show 0.5s ease;
-    
-
-}
-
-img {
-    view-timeline-name: --image;
-    view-timeline-axis: block;
-
-    animation-timeline: --image;
-    animation-name: show;
-}
