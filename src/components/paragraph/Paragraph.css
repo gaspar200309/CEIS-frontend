@@ -1,19 +1,68 @@
 @import '../../App.css';
+
 .paragraph-container {
   display: flex;
   flex-direction: column;
+  padding: 1rem;
+  margin: 0 auto;
+  max-width: 100%;
 }
+
 .paragraph-subtitle {
-    color: var(--text-color-secondary);
-    font-size: 1.1rem;
+  color: var(--text-color-secondary);
+  font-size: 1.1rem;
 }
-.paragraph-container p{
-    color: rgb(20, 20, 57, 0.4);
+
+.paragraph-container p {
+  color: rgba(20, 20, 57, 0.4);
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+h4 {
+  margin: 0;
+}
+
+
+@media (max-width: 576px) {
+  .paragraph-container {
+    padding: 0.5rem;
+  }
+
+  .paragraph-subtitle {
     font-size: 1rem;
+  }
+
+  .paragraph-container p {
+    font-size: 0.9rem;
+  }
 }
-h4{
-    margin: 0;
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .paragraph-container {
+    padding: 0.75rem;
+  }
+
+  .paragraph-subtitle {
+    font-size: 1.05rem;
+  }
+
+  .paragraph-container p {
+    font-size: 0.95rem;
+  }
 }
-/* padding-left: 200px;
-text-align: end;
-text-align: end; */
+
+@media (min-width: 769px) {
+  .paragraph-container {
+    padding: 1rem;
+    max-width: 80%;
+  }
+
+  .paragraph-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .paragraph-container p {
+    font-size: 1.1rem;
+  }
+}

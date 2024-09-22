@@ -1,5 +1,4 @@
-
-
+/* General navbar styles */
 .navbar {
   position: fixed;
   top: 0;
@@ -17,10 +16,7 @@
   transition: background-color 0.3s ease;
 }
 
-body {
-  padding-top: 90px;
-}
-
+/* Logo styles */
 .navbar-logo {
   display: flex;
   align-items: center;
@@ -37,6 +33,7 @@ body {
   font-style: italic;
 }
 
+/* Links styles */
 .navbar-links {
   list-style: none;
   display: flex;
@@ -58,6 +55,7 @@ body {
   text-decoration: underline;
 }
 
+/* Buttons styles */
 .navbar-buttons {
   display: flex;
   gap: 15px;
@@ -79,18 +77,11 @@ body {
   color: #003E49;
 }
 
+/* Hamburger styles */
 .navbar-hamburger {
   display: none;
   cursor: pointer;
-  flex-direction: column;
-  gap: 4px;
-}
-
-.navbar-hamburger div {
-  width: 25px;
-  height: 3px;
-  background-color: var(--text-color);
-  transition: all 0.3s ease;
+  z-index: 10005;
 }
 
 .navbar-mobile {
