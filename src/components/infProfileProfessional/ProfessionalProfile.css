@@ -12,8 +12,9 @@
 }
 
 .fade-in {
-    animation: show 0.8s ease-out forwards; /* Añade la animación */
+    animation: show 0.8s ease-out forwards; 
 }
+
 .container-professional {
     display: flex;
     flex-direction: column;
@@ -153,20 +154,5 @@
   
     .text {
       font-size: 1rem;
-    }
-  }
-  
-  /* Dispositivos grandes (768px en adelante) */
-  @media (min-width: 769px) {
-    .content {
-      flex-direction: row;
-    }
-  
-    .image-side {
-      width: 400px;
-    }
-  
-    .text-section {
-      max-width: 60%;
     }
   }
