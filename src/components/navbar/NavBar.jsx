@@ -33,7 +33,7 @@ function NavBar() {
       </ul>
 
       <div className="navbar-buttons">
-        <button className="btn-login">Inicia Sesión</button>
+        <Link to = "/login" className="btn-login">Inicia Sesión</Link>
         <button className="btn-register">Regístrate</button>
       </div>
 
@@ -48,7 +48,7 @@ function NavBar() {
         </ul>
 
         <div className="navbar-mobile-buttons">
-          <button className="btn-login" onClick={toggleMenu}>Inicia Sesión</button>
+          <Link to = "/login" className="btn-login" onClick={toggleMenu}>Inicia Sesión</Link>
           <button className="btn-register" onClick={toggleMenu}>Regístrate</button>
         </div>
       </div>

@@ -4,10 +4,10 @@ import { Formik, Form } from 'formik';
 import * as Yup from 'yup';
 import './LoginUser.css';
 import InputText from '../../components/inputs/InputText';
-import { Button } from '../../components/buttons/Button';
-import { loginUser } from '../../api/api';
+import { Button } from '../../components/button/Button';
+import { loginUser } from '../../api/Api';
 import { saveToken, saveUser } from './authFunctions';
-import ImagenesApp from '../../assets/ImagenesApp';
+import ImagesApp from '../../assets/ImagesApp';
 
 export default function LoginUser() {
   const [loginError, setLoginError] = useState('');
@@ -49,7 +49,7 @@ export default function LoginUser() {
     <div className="login-container">
       <div className="login-form">
         <h2>Inicia sesión</h2>
-        <img className="logo-fesa" src={ImagenesApp.logo} alt="Logo" height="80px" />
+        <img className="logo-fesa" src={ImagesApp.Logo} alt="Logo" height="80px" />
 
         <Formik
           initialValues={initialValues}
