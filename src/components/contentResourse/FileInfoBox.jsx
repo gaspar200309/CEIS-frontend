@@ -7,8 +7,6 @@ const FileInfoBox = ({ className, dateUploaded, description, docente, fileSize }
       <div className="file-details">
         <p className="dateUploaded">{dateUploaded}</p>
         <p className="file-description">{description}</p>
-      </div>
-      <div className="upload-details">
         <p className="docente">{docente}</p>
         <p className="file-size">{fileSize}</p>
         <FaDownload className="ic-download" />

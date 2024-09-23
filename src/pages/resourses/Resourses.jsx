@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './Resourses.css';
 import SubjectSelector from '../../components/subjectSelector/SubjectSelector';
 import FileInfoBox from '../../components/contentResourse/FileInfoBox';
-
+import ImagesApp from '../../assets/ImagesApp';
 
 const Resourses = () => {
   const [selectedSemestre, setSelectedSemestre] = useState(null);
@@ -55,12 +55,12 @@ const Resourses = () => {
 
       <section className='section'>
         <h3>
-          Cálculo 1 
+          Cálculo 1{/*  nombre de la materia */}
         </h3>
         <div className='underline'></div>
         <div className='card-container-res'>
             <h1>Exámenes Pasados</h1>
-            <FileInfoBox 
+            <FileInfoBox
               className='file-info-box'
               dateUploaded='23/09/2021'
               description='Parcial 1'
@@ -169,7 +169,40 @@ const Resourses = () => {
             />
         </div>
       </section>
-
+        <h1>Envíanos más contenido</h1>
+      <section className='section newSec'>
+          <div className='lf-send-cont'>
+            <div>
+              <input type="text" placeholder='Nombre'/>
+              <input type="text" placeholder='Correo'/>
+            </div>
+            <div>
+              <input className='input-mat' type="text" placeholder='Materia'/>
+              <select name="" id="">
+                <option value="">PDF</option>
+                <option value="">Docx</option>
+                <option value="">JPG</option>
+                <option value="">PNG</option>
+                <option value="">MP4</option>
+              </select>
+              <select name="" id="">
+                <option value="">Examen Pasados</option>
+                <option value="">Practicas</option>
+                <option value="">Libros</option>
+              </select>
+            </div>
+            <div>
+              <textarea name="" id="" placeholder='Descripción'></textarea>
+            </div>
+            <div className='div-btn-send'>
+              <button>Subir Archivo</button>
+              <button>Enviar</button>
+            </div>
+          </div>
+          <div className='rg-send-cont'>
+            <img src={ImagesApp.books} alt="" />
+          </div>
+      </section>
     </main>
   );
 };

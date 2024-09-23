@@ -14,7 +14,7 @@ import imgTerniary from './img/img-terniary.jpg'
 import imgComunicado from './img/image-card-comunications.jpg'
 import imgCourses from './img/image-card-courses.jpg'
 import imgMaterial from './img/image-card-material.jpg'
-
+import books from './img/books.jpg'
 export default {
     "ImgPrimary" : ImgPrimay,
     "Redes" : redes,
@@ -32,6 +32,6 @@ export default {
     "imgComunicado" : imgComunicado,
     "imgCourses" : imgCourses,
     "imgMaterial" : imgMaterial,
-
+    "books": books,
 
 }

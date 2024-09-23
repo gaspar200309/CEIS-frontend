@@ -4,6 +4,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
+    width: inherit;
     background-color: #f0f0f0;
     border-radius: 8px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
@@ -12,14 +13,17 @@
     height: 55px;
 }
 
-.file-details, .upload-details {
+.file-details{
     display: flex;
+    flex-direction: row;
+    width: 100%;
     align-items: center;
     gap: 20px;
 }
 
-.file-details p, .upload-details p {
+.file-details p{
     margin: 0;
+    flex: 1;
 }
 
 .file-description {
