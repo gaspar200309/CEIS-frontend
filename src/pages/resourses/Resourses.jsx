@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Resourses.css';
 import SubjectSelector from '../../components/subjectSelector/SubjectSelector';
-import Card from '../../components/cards/Card';
+import FileInfoBox from '../../components/contentResourse/FileInfoBox';
 import ImagesApp from '../../assets/ImagesApp';
 
 const Resourses = () => {
@@ -55,16 +55,154 @@ const Resourses = () => {
 
       <section className='section'>
         <h3>
-          Cálculo 1 
+          Cálculo 1{/*  nombre de la materia */}
         </h3>
         <div className='underline'></div>
         <div className='card-container-res'>
-          <Card className="custom-card-resourses" image={ImagesApp.Comunicados1} title="Exámenes pasados" description="¡Atención! Consulta los últimos comunicados del Centro de Estudiantes de Ingeniería de Sistemas para estar al día con eventos y noticias importantes."  />
-          <Card className="custom-card-resourses" image={ImagesApp.Comunicados2} title="Libros" description="¡Atención! Consulta los últimos comunicados del Centro de Estudiantes de Ingeniería de Sistemas para estar al día con eventos y noticias importantes."  />
-          <Card className="custom-card-resourses" image={ImagesApp.Comunicados2} title="Practicas" description="¡Atención! Consulta los últimos comunicados del Centro de Estudiantes de Ingeniería de Sistemas para estar al día con eventos y noticias importantes."  />
+            <h1>Exámenes Pasados</h1>
+            <FileInfoBox
+              className='file-info-box'
+              dateUploaded='23/09/2021'
+              description='Parcial 1'
+              docente='Ing. Juan Pérez'            
+              fileSize='1.2 MB'
+            />
+            <FileInfoBox 
+              className='file-info-box'
+              dateUploaded='23/09/2021'
+              description='Parcial 1'
+              docente='Ing. Juan Pérez'            
+              fileSize='1.2 MB'
+            />
+            <FileInfoBox 
+              className='file-info-box'
+              dateUploaded='23/09/2021'
+              description='Parcial 1'
+              docente='Ing. Juan Pérez'            
+              fileSize='1.2 MB'
+            />
+            <FileInfoBox 
+              className='file-info-box'
+              dateUploaded='23/09/2021'
+              description='Parcial 1'
+              docente='Ing. Juan Pérez'            
+              fileSize='1.2 MB'
+            />
+            <FileInfoBox 
+              className='file-info-box'
+              dateUploaded='23/09/2021'
+              description='Parcial 1'
+              docente='Ing. Juan Pérez'            
+              fileSize='1.2 MB'
+            />
+            <h1>Libros</h1>
+            <FileInfoBox 
+              className='file-info-box'
+              dateUploaded='23/09/2021'
+              description='Parcial 1'
+              docente='Ing. Juan Pérez'            
+              fileSize='1.2 MB'
+            />
+            <FileInfoBox 
+              className='file-info-box'
+              dateUploaded='23/09/2021'
+              description='Parcial 1'
+              docente='Ing. Juan Pérez'            
+              fileSize='1.2 MB'
+            />
+            <FileInfoBox 
+              className='file-info-box'
+              dateUploaded='23/09/2021'
+              description='Parcial 1'
+              docente='Ing. Juan Pérez'            
+              fileSize='1.2 MB'
+            />
+            <h1>Prácticas</h1>
+            <FileInfoBox 
+              className='file-info-box'
+              dateUploaded='23/09/2021'
+              description='Parcial 1'
+              docente='Ing. Juan Pérez'            
+              fileSize='1.2 MB'
+            />
+            <FileInfoBox 
+              className='file-info-box'
+              dateUploaded='23/09/2021'
+              description='Parcial 1'
+              docente='Ing. Juan Pérez'            
+              fileSize='1.2 MB'
+            />
+            <FileInfoBox 
+              className='file-info-box'
+              dateUploaded='23/09/2021'
+              description='Parcial 1'
+              docente='Ing. Juan Pérez'            
+              fileSize='1.2 MB'
+            />
+            <FileInfoBox 
+              className='file-info-box'
+              dateUploaded='23/09/2021'
+              description='Parcial 1'
+              docente='Ing. Juan Pérez'            
+              fileSize='1.2 MB'
+            />
+            <FileInfoBox 
+              className='file-info-box'
+              dateUploaded='23/09/2021'
+              description='Parcial 1'
+              docente='Ing. Juan Pérez'            
+              fileSize='1.2 MB'
+            />
+            <FileInfoBox 
+              className='file-info-box'
+              dateUploaded='23/09/2021'
+              description='Parcial 1'
+              docente='Ing. Juan Pérez'            
+              fileSize='1.2 MB'
+            />
+            <FileInfoBox 
+              className='file-info-box'
+              dateUploaded='23/09/2021'
+              description='Parcial 1'
+              docente='Ing. Juan Pérez'            
+              fileSize='1.2 MB'
+            />
         </div>
       </section>
-
+        <h1>Envíanos más contenido</h1>
+      <section className='section newSec'>
+          <div className='lf-send-cont'>
+            <div>
+              <input type="text" placeholder='Nombre'/>
+              <input type="text" placeholder='Correo'/>
+            </div>
+            <div>
+              <input className='input-mat' type="text" placeholder='Materia'/>
+              <select name="" id="">
+                <option value="">PDF</option>
+                <option value="">Docx</option>
+                <option value="">JPG</option>
+                <option value="">PNG</option>
+                <option value="">MP4</option>
+              </select>
+              <select name="" id="">
+                <option value="">Examen Pasados</option>
+                <option value="">Practicas</option>
+                <option value="">Libros</option>
+              </select>
+            </div>
+            <div>
+              <textarea name="" id="" placeholder='Descripción'></textarea>
+            </div>
+            <div className='div-btn-send'>
+              <button>Subir Archivo</button>
+              <button>Enviar</button>
+            </div>
+          </div>
+          <div className='rg-send-cont'>
+            <img src={ImagesApp.books} alt="" />
+          </div>
+      </section>
     </main>
   );
 };

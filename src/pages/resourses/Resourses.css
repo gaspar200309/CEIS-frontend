@@ -1,3 +1,4 @@
+@import '../../App.css';
 .main{
     height: 900px;
 }
@@ -12,8 +13,8 @@
 .semestre-menu {
     display: flex;
     justify-content: space-between;
-    padding-inline: 300px;
     margin-top: 60px;
+    padding-inline: 10%;
 }
 
 .semestre-container {
@@ -66,8 +67,9 @@
 }
 .section{
     margin-top: 30px;
-    padding-inline: 10%;
+    padding-inline: 15%;
     margin-bottom: 50px;
+    justify-content: center;
 }
 
 .section h3{
@@ -77,49 +79,205 @@
     text-align: center;
     margin-bottom: 0px;
 }
-.section .underline{
-    display: flex;
-    justify-content: center;
+.underline{
+    width: 100%;
     margin-top: 20px;
     background-color: var(--primary-color);
     height: 7px;
     margin-bottom: 20px;
-}
-.card-cont-resourses{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10%;
-    height: 800px;
+    border-radius: 3px;
 }
 .card-container-res{
-    display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 10%;
-    height: 500px;
-    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 8px;
 }
-.custom-card-resourses{
-    background-color: #E2E2E2;
-    border-radius: 20px;
-    border: 1px solid black;
-    text-align: start;
-}
-.custom-card-resourses h2{
-    color: #1E0E62;
-}
-.custom-card-resourses p{
-    color: #1E0E62;
-    opacity: 60%;
-}
+.newSec{
+    display: flex;
+    flex-direction: row;
+    padding-top: 1%;
+    margin-top: 0px;
+    height: fit-content;
+    height: 310px;
 
-.custom-card-resourses .card-button{
-    border: 1px solid black;
+}
+.lf-send-cont{
+    flex: 1.5;
+    padding-inline: 5%;
+}
+.rg-send-cont{
+    flex: 1;
+    padding-right: 5%;
     border-radius: 20px;
-    color: #1E0E62;
 }
-.custom-card-resourses .card-button:hover{
-    background-color: #1E0E62;
+.lf-send-cont div{
+    display: flex;
+    flex-direction: row;
+    gap: 6%;
+    align-items: center;
+    margin-bottom: 30px;
+}
+div input{
+    flex: 1;
+    padding: 1% 0% 1% 2%;
+    border: solid 1px #b1b0b0; 
+    border-radius: 20px;
+}
+div input::placeholder,
+textarea::placeholder{
+    color: #b1b0b0;
+}
+.input-mat{
+    flex:3;
+}
+div select{
+    flex: 1.5;
+    padding: 1% 0% 1% 2%;
+    border: solid 1px #b1b0b0;
+    border-radius: 20px;
+    font-family: var(--font-family);
+}
+div textarea{
+    flex: 1;
+    padding: 1% 0% 1% 2%;
+    border: solid 1px #b1b0b0;
+    height: 80px;
+    resize: none;
+    border-radius: 8px;
+    font-family: var(--font-family);
+}
+h1{
+    text-align: center;
+}
+.rg-send-cont img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.div-btn-send{
+    display: flex;
+    justify-content: space-between;
+}
+.lf-send-cont button{
+    background-color: var(--primary-color);
     color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
 }
+@media screen and (max-width: 1200px) {
+    .semestre-menu {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+  
+    .semestre-btn {
+      width: 100%;
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  
+    .section {
+      padding-inline: 10%;
+    }
+  
+    .lf-send-cont div {
+      flex-direction: column;
+    }
+  
+    .div-btn-send {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .rg-send-cont img {
+      height: auto;
+      width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .main {
+      height: auto;
+    }
+  
+    .mat-acad {
+      font-size: 2.5rem;
+    }
+  
+    .semestre-menu {
+      padding-inline: 5%;
+    }
+  
+    .section h3 {
+      font-size: 3.5rem;
+    }
+  
+    .card-container-res {
+      padding-inline: 5%;
+    }
+  
+    .newSec {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .lf-send-cont {
+      padding-inline: 0;
+    }
+  
+    .rg-send-cont {
+      padding-right: 0;
+    }
+  
+    .div-btn-send {
+      justify-content: center;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .mat-acad {
+      font-size: 2rem;
+    }
+  
+    .semestre-btn {
+      font-size: 12px;
+      padding: 6px 12px;
+    }
+  
+    .section h3 {
+      font-size: 2.5rem;
+    }
+  
+    .lf-send-cont div {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .lf-send-cont input,
+    .lf-send-cont select,
+    .lf-send-cont textarea {
+      font-size: 14px;
+    }
+  
+    .lf-send-cont button {
+      padding: 8px 16px;
+      font-size: 14px;
+    }
+  
+    .rg-send-cont img {
+      height: 200px;
+    }
+  
+    .div-btn-send {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  

@@ -9,13 +9,12 @@ import comunicados2 from './img/comunicados2.jpg'
 import comunicados3 from './img/comunicados3.jpg'
 import comunicados4 from './img/comunicados4.jpg'
 import logo from './img/logo.png'
-
 import imgSecondary from './img/img-secondary.jpg'
 import imgTerniary from './img/img-terniary.jpg'
 import imgComunicado from './img/image-card-comunications.jpg'
 import imgCourses from './img/image-card-courses.jpg'
 import imgMaterial from './img/image-card-material.jpg'
-
+import books from './img/books.jpg'
 export default {
     "ImgPrimary" : ImgPrimay,
     "Redes" : redes,
@@ -33,6 +32,6 @@ export default {
     "imgComunicado" : imgComunicado,
     "imgCourses" : imgCourses,
     "imgMaterial" : imgMaterial,
-
+    "books": books,
 
 }
