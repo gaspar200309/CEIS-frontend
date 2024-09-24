@@ -17,4 +17,5 @@ body {
   padding: 0;
   font-family: var(--font-family);
   color: var(--text-color-secondary);
+  padding-top: 89px;
 }

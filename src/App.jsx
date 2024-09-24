@@ -6,6 +6,7 @@ import Home from './pages/home/Home';
 import OurCareer from './pages/ourcareer/OurCareer';
 import Resourses from './pages/resourses/Resourses';
 import Communications from './pages/communications/Communications';
+import Courses from './pages/Courses/Courses';
 function App() {
     return(
         <>
@@ -15,6 +16,7 @@ function App() {
                 <Route path="/nuestra-carrera" element={<OurCareer />} />
                 <Route path="/recursos" element={<Resourses />} />
                 <Route path="/comunicados" element={<Communications />} />
+                <Route path="/cursos" element={<Courses />} />
             </Routes>
         <Footer/>
         </>
