@@ -19,17 +19,19 @@ const Courses = () => {
             <Card   className="card-course"
                     image={ImagesApp.Comunicados2}
                     title="Curso HTML"
-                    subtitle="Nivel Básico"
+                    subtitle="Alfredo Torrico"
+                    description="Este curso cuenta para tener contenido variado y de calidad"
+            />
+            <Card   className="card-course"
+                    image={ImagesApp.Comunicados2}
+                    title="Curso HTML"
+                    subtitle="Jhon Henry"
                     description="aspdiasjkdhajkshdkjashdkasjhd"
             />
             <Card   className="card-course"
                     image={ImagesApp.Comunicados2}
                     title="Curso HTML"
-                    description="aspdiasjkdhajkshdkjashdkasjhd"
-            />
-            <Card   className="card-course"
-                    image={ImagesApp.Comunicados2}
-                    title="Curso HTML"
+                    subtitle="Armando Gaspar"
                     description="aspdiasjkdhajkshdkjashdkasjhd"
             />
             
