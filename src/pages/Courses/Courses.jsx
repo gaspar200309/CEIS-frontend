@@ -19,11 +19,24 @@ const Courses = () => {
             <Card   className="card-course"
                     image={ImagesApp.Comunicados2}
                     title="Curso HTML"
+                    subtitle="Nivel Básico"
                     description="aspdiasjkdhajkshdkjashdkasjhd"
             />
-            <Card   image={ImagesApp.Comunicados2}/>
-            <Card   image={ImagesApp.Comunicados2}/>
+            <Card   className="card-course"
+                    image={ImagesApp.Comunicados2}
+                    title="Curso HTML"
+                    description="aspdiasjkdhajkshdkjashdkasjhd"
+            />
+            <Card   className="card-course"
+                    image={ImagesApp.Comunicados2}
+                    title="Curso HTML"
+                    description="aspdiasjkdhajkshdkjashdkasjhd"
+            />
+            
         </section>
+        <div>
+            {/* <Pagination count={10} color="primary" /> */}
+        </div>
     </main>
   )
 }

@@ -32,7 +32,27 @@
     display: flex;
     justify-content: space-between;
     padding-inline: 8%;
+    margin-top: 2.5%;
+    margin-bottom: 40px;
 }
 .card-course{
     height: 350px;
+    background-color: rgb(236, 236, 236);
+}
+.card-course h2, .card-course p{
+    color: var(--text-color-secondary);
+}
+.card-course h2{
+    font-size: 1rem;
+    text-align: center;
+}
+.card-course p{
+    font-size: 0.8rem;
+    text-align: start;
+}
+.card-course h2{
+    border-bottom-style: solid;
+}
+.card-course h2:hover{
+    cursor: pointer;
 }
