@@ -55,7 +55,7 @@ const Resourses = () => {
 
       <section className='section'>
         <h3>
-          Cálculo 1{/*  nombre de la materia */}
+          Cálculo 1
         </h3>
         <div className='underline'></div>
         <div className='card-container-res'>

@@ -100,7 +100,7 @@
 
 /* Our Career section */
 .main-our-career-container {
-    display: grid;
+    display: grid;  
     grid-template-columns: 1fr 1.8fr;
     height: 700px;
 }

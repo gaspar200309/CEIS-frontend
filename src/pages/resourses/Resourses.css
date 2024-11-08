@@ -149,7 +149,7 @@ div textarea{
     font-family: var(--font-family);
 }
 h1{
-    text-align: center;
+    text-align: start;
 }
 .rg-send-cont img{
     height: 100%;

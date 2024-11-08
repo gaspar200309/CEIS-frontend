@@ -4,7 +4,7 @@ import NavBar from './components/navbar/NavBar';
 import Footer from './components/footer/Footer';
 import Home from './pages/home/Home';
 import OurCareer from './pages/ourcareer/OurCareer';
-import Resourses from './pages/resourses/Resourses';
+import LandResourses from './pages/resourses/LandResourses';
 import Communications from './pages/communications/Communications';
 import Courses from './pages/Courses/Courses';
 function App() {
@@ -14,7 +14,7 @@ function App() {
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/nuestra-carrera" element={<OurCareer />} />
-                <Route path="/recursos" element={<Resourses />} />
+                <Route path="/recursos" element={<LandResourses />} />
                 <Route path="/comunicados" element={<Communications />} />
                 <Route path="/cursos" element={<Courses />} />
             </Routes>
