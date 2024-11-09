@@ -1,11 +1,12 @@
 import React from 'react'
 import './LandResourses.css'
 import ImagesApp from '../../assets/ImagesApp'
-
+import MatNavMenu from '../../components/matNav/MatNavMenu'
 const LandResourses = () => {
   return (
     <>
       <h1 className='tit'>Material Académico</h1>
+      <MatNavMenu />
       <section className='landRes-main-cont'>
           <div className='l-div'>
             <h1>¿Qué es lo que encontrarás en esta sección?</h1>

@@ -6,7 +6,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: space-between;
-    margin: 50px 0px 50px 0px;
+    margin: 0px 0px 50px 0px;
     height: 560px;
     align-items: center;
     
@@ -130,4 +130,106 @@ h1{
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
+}
+@media screen and (max-width: 1200px) {
+    .landRes-main-cont {
+        height: auto;
+        margin: 30px 0;
+    }
+
+    .l-div {
+        padding-inline: 10%;
+    }
+
+    .newSec {
+        padding-inline: 8%;
+        height: auto;
+        min-height: 310px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .landRes-main-cont {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .r-div {
+        height: 300px;
+        background-attachment: scroll;
+    }
+
+    .newSec {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .rg-send-cont {
+        padding-right: 0;
+    }
+
+    .rg-send-cont img {
+        max-height: 300px;
+    }
+
+    .seg-section div {
+        width: 90%;
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .l-div {
+        padding-inline: 5%;
+    }
+
+    .l-div p, .seg-section p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    .lf-send-cont div {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+    }
+
+    .lf-send-cont div input,
+    .lf-send-cont div select,
+    .lf-send-cont div textarea {
+        width: 100%;
+        padding: 8px 15px;
+    }
+
+    .div-btn-send {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .div-btn-send button {
+        width: 100%;
+    }
+
+    .input-mat {
+        flex: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .tit {
+        font-size: 1.5rem;
+    }
+
+    .l-div h1,
+    .seg-section h1 {
+        font-size: 1.3rem;
+    }
+
+    .r-div {
+        height: 200px;
+    }
+
+    .rg-send-cont img {
+        max-height: 200px;
+    }
 }
