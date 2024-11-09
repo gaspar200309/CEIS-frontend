@@ -11,6 +11,7 @@
   flex-direction: column;
   justify-content: space-between;
   transition: 0.4s;
+  min-height: 400px;
 }
 
 .card:hover {
@@ -20,6 +21,7 @@
 
 .card-image-div {
   min-width: 100%;
+  min-height: 170px;
   max-height: 230px;
   height: 230px;
   overflow: hidden;
@@ -45,6 +47,13 @@
 .card p {
   font-size: 1rem;
   color: #d3d3d3;
+}
+.card h3{
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #000000;
+  text-align: start;
+  font-weight: 300;
 }
 
 .card-button {

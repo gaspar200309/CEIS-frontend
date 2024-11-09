@@ -18,7 +18,7 @@ const Resourses = () => {
     7: ['Taller de Ing. Software', 'Redes Avanzadas', 'Dinámica de Sist.', 'Sistemas 3', 'Gestion de Calidad de Software', 'Planif. y Eva. de Proyectos'],
     8: ['Ingles 3', 'Evaluacion y Auditoria', 'Taller de Sim. de Sistemas', 'Gestion Estrategica de Sistemas', 'Meto. y Planif. Dd Proyecto Dr Grado', 'Seguridad de Sistemas'],
     9: ['Proyecto Final', 'Parctica Empresarial'],
-    Electivas: ['Generacion de Software', 'Programacion Movil', 'Big Data', 'Web Semánticas', 'Robótica', 'Telefonía IP']
+    'Electivas': ['Generacion de Software', 'Programacion Movil', 'Big Data', 'Web Semánticas', 'Robótica', 'Telefonía IP']
   };
 
   const handleMouseEnter = (semestre) => {
@@ -55,7 +55,7 @@ const Resourses = () => {
 
       <section className='section'>
         <h3>
-          Cálculo 1{/*  nombre de la materia */}
+          Cálculo 1
         </h3>
         <div className='underline'></div>
         <div className='card-container-res'>

@@ -1,0 +1,62 @@
+@import '../../App.css';
+.nav-course{
+    border: solid 2px black;
+    display: flex;
+    flex-direction: row;
+    padding-inline: 7%;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-course div{
+    flex: 4;
+    display: flex;
+    flex-direction: row;
+    gap: 3%;
+}
+
+.nav-course input{
+    flex: 1.5;
+    height: 5px;
+}
+.p-selected{
+    font-weight: 600;
+}
+.nav-course div p{
+    color: var(--text-color-secondary);
+    text-transform: uppercase;
+}
+.nav-course div p:hover{
+    cursor: pointer;
+}
+.section-course-card{
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 8%;
+    margin-top: 2.5%;
+    margin-bottom: 40px;
+}
+.card-course{
+    height: 350px;
+    background-color: rgb(236, 236, 236);
+}
+.card-course h2, .card-course p{
+    color: var(--text-color-secondary);
+}
+.card-course h2{
+    font-size: 1rem;
+    text-align: center;
+    color: #000000;
+
+}
+.card-course p{
+    font-size: 0.8rem;
+    text-align: start;
+    color: #000000;
+
+}
+.card-course h2{
+    border-bottom-style: solid;
+}
+.card-course h2:hover{
+    cursor: pointer;
+}
