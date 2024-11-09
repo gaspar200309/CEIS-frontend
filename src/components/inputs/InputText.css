@@ -1,0 +1,73 @@
+/* InputText.css */
+
+.input-component {
+  margin-bottom: 1.5rem;
+}
+
+.input-component label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--text-color-secundary);
+  font-weight: 600;
+}
+
+.input-component .required {
+  color: var(--color-5);
+  margin-left: 0.25rem;
+}
+
+.input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.text-input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--primary-color);
+  border-radius: 4px;
+  background-color: var(--body-color);
+  color: var(--text-color);
+  transition: var(--tran-03);
+}
+
+.text-input:focus {
+  border-color: var(--color-4);
+  outline: none;
+}
+
+.text-input.dark {
+  background-color: var(--color-dark);
+  border: 0.5px solid var(--color-3);
+  color: var(--toggle-color);
+}
+
+.toggle-password-btn {
+  position: absolute;
+  right: 0.75em;
+  background: none;
+  border: none;
+  font-size: 1.25rem;
+  cursor: pointer;
+  color: var(--primary-color);
+  transition: var(--tran-03);
+}
+
+.toggle-password-btn:hover {
+  color: var(--color-3);
+}
+
+.error-message {
+  color: var(--color-5);
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+}
+
+/* Dark Theme Adjustments */
+body.dark .input-component label {
+}
+
+body.dark .error-message {
+  color: var(--color-5);
+}
