@@ -5,11 +5,12 @@ const baseURL = "http://localhost:8000";
 const api = axios.create({
   baseURL: baseURL,
   responseType: 'json',
-  withCredentials: true,
+  //withCredentials: true,
   timeout: 10000
 });
 
-export const loginUser = (data) => api.post('/auth/login', data);
+export const loginUser = (data) => api.post('/user/login/', data);
+export const registerUser = (data) => api.post('/user/register/', data);  
 
 export const registerTeacher = (data) => api.post('/api/teachers', data)
 export const getTeacher = () => api.get('/api/teachers')

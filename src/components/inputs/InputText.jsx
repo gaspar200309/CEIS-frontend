@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useField } from "formik";
 import "./InputText.css";
-import { FaEye, FaEyeSlash } from "react-icons/fa"; // Asegúrate de tener react-icons instalado
+import { FaEye, FaEyeSlash } from "react-icons/fa"; 
 
 function InputText({ label, required, type = "text", ...props }) {
   const [field, meta] = useField(props);

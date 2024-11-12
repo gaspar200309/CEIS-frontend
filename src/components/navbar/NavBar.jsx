@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from "react-router-dom";
+import { Link, Navigate, NavLink } from "react-router-dom";
 import ImagesApp from '../../assets/ImagesApp';
 import useIcons from '../../hooks/useIcons';
 import './NavBar.css';
@@ -34,7 +34,7 @@ function NavBar() {
 
       <div className="navbar-buttons">
         <Link to = "/login" className="btn-login">Inicia Sesión</Link>
-        <button className="btn-register">Regístrate</button>
+        <Link to = "/register" className="btn-register">Regístrate</Link>
       </div>
 
       <div className={`navbar-mobile ${menuOpen ? 'open' : ''}`}>
@@ -49,7 +49,7 @@ function NavBar() {
 
         <div className="navbar-mobile-buttons">
           <Link to = "/login" className="btn-login" onClick={toggleMenu}>Inicia Sesión</Link>
-          <button className="btn-register" onClick={toggleMenu}>Regístrate</button>
+          <Link to = "/register" className="btn-register">Regístrate</Link>
         </div>
       </div>
     </nav>

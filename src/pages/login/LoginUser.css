@@ -36,22 +36,7 @@
   margin-bottom: 1rem;
 }
 
-.login-form .input-component label {
-  display: block;
-  font-weight: bold;
-  margin-bottom: 0.5rem;
-  color: var(--text-color);
-}
 
-.input-component .text-input {
-  width: 100%;
-  padding: 0.75rem;
-  border: 1px solid var(--toggle-color);
-  border-radius: 4px;
-  background-color: var(--sidebar-color);
-  color: var(--text-color);
-  transition: var(--tran-05);
-}
 
 .login-form .input-component .text-input:focus {
   border-color: var(--primary-color);
