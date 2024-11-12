@@ -7,7 +7,7 @@ import OurCareer from './pages/ourcareer/OurCareer';
 import LandResourses from './pages/resourses/LandResourses';
 import Communications from './pages/communications/Communications';
 import LoginUser from './pages/login/LoginUser';
-import Courses from './pages/course/Courses';
+//import Courses from './pages/course/Courses';
 
 function App() {
     //s
@@ -21,7 +21,7 @@ function App() {
                 <Route path="/nuestra-carrera" element={<OurCareer />} />
                 <Route path="/recursos" element={<LandResourses />} />
                 <Route path="/comunicados" element={<Communications />} />
-                <Route path="/cursos" element={<Courses/>} />
+                {/* <Route path="/cursos" element={<Courses/>} /> */}
             </Routes>
         <Footer/>
         </>
