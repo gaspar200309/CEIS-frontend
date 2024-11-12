@@ -7,7 +7,7 @@ import OurCareer from './pages/ourcareer/OurCareer';
 import LandResourses from './pages/resourses/LandResourses';
 import Communications from './pages/communications/Communications';
 import LoginUser from './pages/login/LoginUser';
-import Courses from './pages/courses/Courses';
+import Courses from './pages/Courses/Courses';
 
 function App() {
     //deploy
