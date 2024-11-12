@@ -7,6 +7,7 @@ import OurCareer from './pages/ourcareer/OurCareer';
 import Resourses from './pages/resourses/Resourses';
 import Communications from './pages/communications/Communications';
 import LoginUser from './pages/login/LoginUser';
+import RegisterUser from './pages/registerUser/RegisterUser';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
                 <Route path="/nuestra-carrera" element={<OurCareer />} />
                 <Route path="/recursos" element={<Resourses />} />
                 <Route path="/comunicados" element={<Communications />} />
+                <Route path="/register" element={<RegisterUser />} />
             </Routes>
         <Footer/>
         </>
