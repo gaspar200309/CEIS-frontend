@@ -9,7 +9,7 @@ const api = axios.create({
   timeout: 10000
 });
 
-export const loginUser = (data) => api.post('/auth/login', data);
+export const loginUser = (data) => api.post('/user/login/', data);
 
 export const registerTeacher = (data) => api.post('/api/teachers', data)
 export const getTeacher = () => api.get('/api/teachers')

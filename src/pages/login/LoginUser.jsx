@@ -14,12 +14,12 @@ export default function LoginUser() {
   const navigate = useNavigate();
 
   const initialValues = {
-    identifier: '',
+    email: '',
     password: '',
   };
 
   const validationSchema = Yup.object({
-    identifier: Yup.string()
+    email: Yup.string()
       .email('Correo electrónico inválido')
       .required('El correo electrónico es requerido'),
     password: Yup.string()
@@ -32,8 +32,8 @@ export default function LoginUser() {
       console.log('Login result:', result);
 
       if (result.data.access_token) {
-        saveToken(result.data.access_token);
-        saveUser({ username: result.data.username, roles: result.data.roles });
+        //saveToken(result.data.access_token);
+        //saveUser({ username: result.data.username, roles: result.data.roles });
         navigate('/home');
       } else {
         setLoginError('Credenciales incorrectas. Por favor, intente de nuevo.');
@@ -60,8 +60,8 @@ export default function LoginUser() {
             <Form>
               <InputText
                 label="Correo electrónico"
-                name="identifier"
-                type="text"
+                name="email"
+                type="email"
                 required
               />
               <InputText

@@ -7,7 +7,7 @@
 .input-component label {
   display: block;
   margin-bottom: 0.5rem;
-  color: var(--text-color-secundary);
+  color: var(--text-color-tertiary);
   font-weight: 600;
 }
 
@@ -28,7 +28,7 @@
   border: 1px solid var(--primary-color);
   border-radius: 4px;
   background-color: var(--body-color);
-  color: var(--text-color);
+  color: var(--text-color-tertiary);
   transition: var(--tran-03);
 }
 
