@@ -10,7 +10,6 @@ import LoginUser from './pages/login/LoginUser';
 import Courses from './pages/Courses/Courses';
 
 function App() {
-    //deploy
     //s
     return(
         <>
