@@ -11,6 +11,7 @@ import Courses from './pages/courses/Courses';
 
 function App() {
     //deploy
+    //s
     return(
         <>
         <NavBar />
