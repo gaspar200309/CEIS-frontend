@@ -10,9 +10,11 @@ import LoginUser from './pages/login/LoginUser';
 import Courses from './pages/courses/Courses';
 
 function App() {
+    //deploy
     return(
         <>
         <NavBar />
+        
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/login" element={<LoginUser />} />
